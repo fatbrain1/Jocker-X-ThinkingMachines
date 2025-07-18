@@ -1,0 +1,17 @@
+name: Daily Research Update
+on:
+  schedule:
+    - cron: '0 3 * * *' # 3 AM UTC daily
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -o research/$(date +%Y-%m-%d)-paper.pdf \
+          https://arxiv.org/pdf/2305.$((RANDOM % 99999)).pdf
+          git config --global user.name "fatbrain1"
+          git config --global user.email "your@email.com"
+          git add .
+          git commit -m "Daily research update"
+          git push
