@@ -1,0 +1,11 @@
+name: "Thinking Machines Collaboration"
+title: "[For Mira Murati] Jocker Protocol Synergy"
+labels: ["collaboration", "agi"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Let's connect cognitive architectures**"
+  - type: textarea
+    attributes:
+      label: "How can we align with Thinking Machines Lab?"
+      placeholder: "e.g., Shared research on temporal reasoning..."
