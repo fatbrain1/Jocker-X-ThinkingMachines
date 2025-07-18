@@ -26,4 +26,5 @@ Sincerely,
 [Mansour Adam]  
 Founder, Jocker Protocol  
 GitHub: @fatbrain1
+email: mansjobs@icloud.com
 x @defo0 
